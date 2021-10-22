@@ -26,6 +26,7 @@ body {
     padding: 20px 0;
     background: rgba(0, 0, 0, 0.8);
     z-index: 150;
+    text-transform: uppercase;
 }
 
 .navigation {
@@ -44,6 +45,7 @@ body {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    line-height: 20px;
 }
 
 .navigation-list__item a:hover {
@@ -96,6 +98,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    white-space: wrap;
 }
 
 .crossed {
@@ -106,6 +109,7 @@ body {
     font-weight: bold;
     font-size: 35px;
     margin-bottom: 25px;
+    font-style: italic;
 }
 
 
