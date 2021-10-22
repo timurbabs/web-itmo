@@ -110,4 +110,8 @@ body {
     .table {
         font-size: 12px;
     }
+
+    .navigation-list__item a {
+        font-size: 13px;
+    }
 }

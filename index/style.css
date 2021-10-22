@@ -131,4 +131,8 @@ li {
         width: 10px;
         height: 20px;
     }
+
+    .navigation-list__item a {
+        font-size: 13px;
+    }
 }
