@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-}
-
-
-li {
-    list-style: none;
+    height: 100vh;
 }
 
 .header {
@@ -20,7 +20,6 @@ li {
     left: 0;
     right: 0;
     padding: 20px 0;
-    background: rgba(0, 0, 0, 0.8);
     z-index: 150;
 }
 
@@ -33,6 +32,7 @@ li {
 .navigation-list {
     display: flex;
     justify-content: space-around;
+
 }
 
 .navigation-list__item a {
@@ -49,13 +49,21 @@ li {
     position: fixed;
     right: 0;
     bottom: 0;
+    top:0;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .main {
     padding: 30px;
     position: relative;
+    min-height: 90%;
     top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .main-content {
@@ -72,10 +80,9 @@ li {
 }
 
 .main-content__quote {
-    display: inline-block;
     width: 100%;
+    display: inline-block;
     text-align: center;
-    margin-top: 6px;
 }
 
 .main-description {
@@ -86,28 +93,34 @@ li {
     align-items: center;
 }
 
+.crossed {
+    text-decoration: line-through;
+}
+
 .main-description-text__title {
     font-weight: bold;
     font-size: 35px;
     margin-bottom: 25px;
 }
 
-.main-description__ascii {
-    font-family: monospace;
-}
-
-.crossed {
-    text-decoration: line-through;
-}
 
 .flex-container {
     display: flex;
 }
 
-.container {
-    max-width: 1000px;
-    padding: 0 15px;
-    margin: 0 auto;
+.footer {
+    flex: 0 0 auto;
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.footer-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
 }
 
 .footer-list {
@@ -115,24 +128,16 @@ li {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    padding-bottom: 10px;
 }
 
 .footer-list__item__image {
     height: 40px;
+
 }
 
 .footer-list__item__image:hover {
     filter: opacity(0.5) drop-shadow(0 0 0 orange) brightness(3);
-}
-
-.footer-flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.invert {
-    filter: invert(100%);
 }
 
 @media (max-width: 768px) {
