@@ -5,7 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>timurbabs's CV</title>
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/background.css">
+
+  <link rel="stylesheet" href="../styles/header.css">
   <link rel="stylesheet" href="about_me.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+  <link rel="stylesheet" href="../styles/pageLoad.css">
+  <link rel="stylesheet" href="../styles/modal.css">
+  <link rel="stylesheet" href="../styles/swiper-bundle.min.css">
+<!--  animate css-->
+  <link rel="stylesheet" href="../styles/animate.min.css">
+  <!--slider-->
+  <script src="../scripts/pageLoad.js"></script>
 </head>
 <body>
 
@@ -13,47 +25,91 @@
     <source src="../Black.mp4" type="video/mp4">
   </video>
 
-  <header class="header"> 
+  <header class="header">
+    <div class="username"></div>
+
     <nav class="navigation">
       <ul class="navigation-list">
-        <li class="navigation-list__item"><a href="../index/index.html">Main</a></li>
-        <li class="navigation-list__item"><a href="about_me.html">About me</a></li>
-        <li class="navigation-list__item"><a href="../hard_skills/hard_skills.html">Hard skills</a></li>
-        <li class="navigation-list__item"><a href="../soft_skills/soft_skills.html">Soft skills</a></li>
+        <li class="navigation-list__item main-page"><a href="../index/index.html">Main</a></li>
+        <li class="navigation-list__item about-page"><a href="about_me.html">About me</a></li>
+        <li class="navigation-list__item hard-skills-page"><a href="../hard_skills/hard_skills.html">Hard skills</a></li>
+        <li class="navigation-list__item soft-skills-page"><a href="../soft_skills/soft_skills.html">Soft skills</a></li>
       </ul>
     </nav>
+    <div class="login-buttons">
+      <button class="button reg-button">Регистрация</button>
+      <button class="button login-button">Войти</button>
+      <button class="button exit-button">Выйти</button>
+    </div>
+
   </header>
 
-  <div class="footer-flex-container">
+  <div class="flex-wrapper">
+
   <main class="main">
-      <div class="container flex-container">
-        <div class="main-content">
-            <div class="main-content__image">
-                <img src="../images/about_me.jpg" alt="about_me.jpg image is missing">
+    <div class="container">
+      <div class="flex-container">
+      <div class="swiper image-slider ">
+
+          <div class="swiper-wrapper image-slider__wrapper">
+
+            <div class="swiper-slide image-slider__slide">
+              <div class="image-box image-slider__image">
+                <img src="../images/about_me.jpg" alt="">
+              </div>
             </div>
-                <q class="main-content__quote">Аллах-бабах</q>
-                <q class="main-content__quote">H<sub>2</sub>O</q>
+            <div class="swiper-slide image-slider__slide">
+              <div class="image-box image-slider__image">
+                <img src="../images/highcompress_tima-s-boku.JPG" alt="">
+              </div>
             </div>
-            <article class="main-description">
-                <div class="main-description-text">
-                    <h2 class="main-description-text__title">Меня зовут <span class="crossed">Бабур</span> Тимур</h2>
-                    <p class="main-description-text__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur dolor temporibus harum architecto? Illum consectetur dolorum corporis sed sequi dolore voluptates deleniti, aperiam officiis necessitatibus! Facilis ad corrupti vitae veniam laboriosam. Eaque consectetur natus veniam alias laborum dignissimos delectus, saepe perferendis, odit libero consequatur beatae accusamus. Quis saepe ipsam sint commodi molestiae autem provident amet, neque optio quae perferendis eius dolor rem sunt hic adipisci rerum fugiat ad doloribus impedit at? Facere ex eius iste nesciunt modi corporis perspiciatis obcaecati?</p>
-                </div>
-                <div class="main-description__ascii"><pre>|\---/|
-| o_o |
- \_^_/ </pre>
-                </div>
-            </article>
+            <div class="swiper-slide image-slider__slide">
+              <div class="image-box image-slider__image">
+                <img src="../images/highcompress_tima-u-zabora.JPG" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="main-description animate__animated animate__fadeInDown">
+          <h1 class="main-title">Тимур Бабурин</h1>
+          <div class="main-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam blanditiis iusto quod repellendus sint tenetur vitae. Architecto corporis cumque deserunt dolores nulla quas tempora?
+            <br><br> Adipisci alias atque cum dolor dolorum ducimus explicabo fugiat fugit illo inventore magni pariatur placeat, quasi quidem reprehenderit sit temporibus, unde, ut veniam voluptas. Architecto aut eos incidunt ipsa labore modi nemo officia. A, adipisci animi corporis culpa eligendi eveniet expedita fugit iste labore maiores mollitia, nihil, optio perspiciatis quasi sit tenetur unde veniam voluptate. Aspernatur at doloribus, eveniet fugit illum inventore ipsam maiores minus nemo nisi obcaecati, qui rerum, sint tenetur vel voluptates voluptatibus. Optio!
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam aspernatur beatae culpa dignissimos dolores hic illum nobis similique vero. Facere harum natus repellendus tempore.
+          </div>
+        </div>
       </div>
+
+    </div>
+
   </main>
 
-  <footer class="footer">
-    <ul class="footer-list">
-      <li class="footer-list__item"><a href="https://github.com/timurbabs"><img class="invert footer-list__item__image" src="../images/github.png" alt="github.png image is missing"></a></li>
-      <li class="footer-list__item"><a href="https://t.me/timurbabs"><img class="invert footer-list__item__image" src="../images/telegram.png" alt="telegram.png image is missing"></a></li>
-      <li class="footer-list__item"><a href="mailto:timurbabs@gmail.com"><img class="invert footer-list__item__image" src="../images/email.png" alt="email.png image is missing"></a></li>
-    </ul>
-  </footer>
+    <footer class="footer">
+      <div class="load-time">
+        <div class="load-time_icon">
+          <img src="../images/sand-clock.png" alt="">
+        </div>
+        <div class="load-time_text">
+        </div>
+      </div>
+      <ul class="footer-list">
+        <li class="footer-list__item"><a href="https://github.com/timurbabs"><img class="invert footer-list__item__image" src="../images/github.png" alt="github.png image is missing"></a></li>
+        <li class="footer-list__item"><a href="https://t.me/timurbabs"><img class="invert footer-list__item__image" src="../images/telegram.png" alt="telegram.png image is missing"></a></li>
+        <li class="footer-list__item"><a href="mailto:timurbabs@gmail.com"><img class="invert footer-list__item__image" src="../images/email.png" alt="email.png image is missing"></a></li>
+      </ul>
+    </footer>
+
   </div>
+
+  <script src="../scripts/location.js"></script>
+  <script src="../scripts/login.js"></script>
+
+  <script src="../scripts/swiper-bundle.min.js"></script>
+  <script src="../scripts/slider.js"></script>
 </body>
 </html>

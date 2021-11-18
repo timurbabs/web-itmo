@@ -1,0 +1,117 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 150;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+.username {
+    min-width: 150px;
+    line-height: 28px;
+    opacity: 1;
+    margin-left: 10px;
+}
+
+.login-buttons * {
+    margin-right: 10px;
+    display: none;
+}
+
+.login-buttons {
+    display: flex;
+    justify-content: flex-end;
+    min-width: 150px;
+}
+
+.exit-button {
+    display: none;
+}
+
+.navigation {
+    min-width: 600px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation-list__item a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.header .navigation-list__item a:hover {
+    color: orange;
+}
+
+.navigation-list__item.active a{
+    color: #f8b878;
+}
+
+@media (max-width: 910px){
+    .navigation {
+        min-width: 400px;
+    }
+    .navigation a {
+        font-size: 15px;
+    }
+    .username {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 710px) {
+    .username {
+        font-size: 10px;
+    }
+    .navigation {
+        min-width: 320px;
+    }
+    .navigation a {
+        font-size: 12px;
+    }
+
+    .login-buttons button{
+        font-size: 11px;
+    }
+
+
+}
+
+@media (max-width: 630px) {
+
+    .header {
+        height: 100px;
+    }
+    .navigation {
+        min-width: 100%;
+    }
+
+    .navigation-list {
+        justify-content: space-between;
+    }
+
+    .login-buttons {
+        font-size: 15px;
+        position: fixed;
+        right: 5px;
+        top: 60px;
+    }
+
+    .username {
+        position: fixed;
+        top: 60px;
+        left: 8px;
+    }
+}

@@ -1,0 +1,33 @@
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    z-index: 1000;
+}
+.invert{
+    filter: invert(100%);
+}
+
+.footer-list {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-list__item__image {
+    height: 40px;
+    transition: all 0.2s ease-out;
+
+}
+
+.footer-list__item__image:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 orange) brightness(3);
+    transform: translateY(-5px);
+}
+
+@media (max-width: 630px) {
+    .footer {
+        height: 100px;
+    }
+}
