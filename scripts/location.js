@@ -1,11 +1,11 @@
-const page = document.location.href.split('/')[3]
-
+const locationParts = document.location.href.split('/')
+const locationPage = locationParts[locationParts.length - 1]
 const pages = {
-  'index': 'main-page',
-  'about_me': 'about-page',
-  'hard_skills': 'hard-skills-page',
-  'soft_skills': 'soft-skills-page',
+  'index.html': 'main-page',
+  'about_me.html': 'about-page',
+  'hard_skills.html': 'hard-skills-page',
+  'soft_skills.html': 'soft-skills-page',
 }
 
-const navElement = document.querySelector(`.${pages[page]}`)
+const navElement = document.querySelector(`.${pages[locationPage]}`)
 navElement.classList.add('active')

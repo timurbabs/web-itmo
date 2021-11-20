@@ -4,6 +4,7 @@
     position: relative;
     z-index: 1000;
 }
+
 .invert{
     filter: invert(100%);
 }
@@ -18,7 +19,6 @@
 .footer-list__item__image {
     height: 40px;
     transition: all 0.2s ease-out;
-
 }
 
 .footer-list__item__image:hover {

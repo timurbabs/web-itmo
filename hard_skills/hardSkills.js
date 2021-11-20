@@ -148,4 +148,3 @@ function addToTable(data){
   
   localStorage.setItem('table', table.innerHTML)
 }
-

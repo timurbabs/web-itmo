@@ -163,6 +163,10 @@
     opacity: .8;
 }
 
+.add-button {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .table {
         font-size: 12px;

@@ -30,24 +30,27 @@
 .table td {
     padding: 5px;
 }
-.table tbody {
-    position: relative;
-}
 
-.table tbody:hover {
-    position: relative;
-}
+/*.table tbody {*/
+/*    position: relative;*/
+/*}*/
+
+/*.table tbody:hover {*/
+/*    position: relative;*/
+/*}*/
 
 .table tbody:nth-child(2n) td {
     background: white;
     color: black;
 }
-.row:not(:last-child) {
-    border: none;
-}
-.table td {
-    /*width: 120px;*/
-}
+
+/*.row:not(:last-child) {*/
+/*    border: none;*/
+/*}*/
+
+/*.table td {*/
+/*    width: 120px;*/
+/*}*/
 
 .table #td-hide {
     background: black;
@@ -73,8 +76,8 @@
     flex-direction: column;
 }
 
-.popup {
-}
+/*.popup {*/
+/*}*/
 
 .popup.hide {
     opacity: 0;
@@ -126,7 +129,6 @@
     margin-bottom: 15px;
     outline: none;
     font-size: 20px;
-
 }
 
 .buttons {
@@ -137,6 +139,7 @@
 .submit-button {
     margin-left: 10px;
 }
+
 .delete-button {
     opacity: 0;
     position: absolute;
@@ -146,7 +149,6 @@
     right: -45px;
     transition: all 0.2s ease-out;
     background: transparent;
-
 }
 
 .delete-button img {
@@ -162,6 +164,7 @@
 
 .table tbody:hover .delete-button {
     opacity: .8;
+    background: transparent;
 }
 
 .warning {
@@ -217,6 +220,11 @@
 .lds-ring div:nth-child(3) {
     animation-delay: -0.15s;
 }
+
+.add-button {
+    display: none;
+}
+
 @keyframes lds-ring {
     0% {
         transform: rotate(0deg);
@@ -237,5 +245,3 @@
     }
 
 }
-
-

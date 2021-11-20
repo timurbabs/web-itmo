@@ -3,6 +3,7 @@ let regButton = document.querySelector('.reg-button')
 let loginButton = document.querySelector('.login-button')
 let exitButton = document.querySelector('.exit-button')
 let userLabel = document.querySelector('.username')
+let addNewButton = document.querySelector('.add-button')
 let modal = createModal()
 
 regButton.addEventListener('click', showModal)
@@ -12,6 +13,7 @@ exitButton.addEventListener('click', signOut)
 if (!(localStorage.getItem('user') === 'null')){
   setUser(localStorage.getItem('user'))
   show(exitButton)
+  show(addNewButton)
 } else {
   show(loginButton, regButton)
 }
@@ -82,14 +84,14 @@ function createModal(){
 function signOut(){
   userLabel.innerHTML = ''
   show(loginButton, regButton)
-  hide(exitButton)
+  hide(exitButton, addNewButton)
   localStorage.setItem('user', null)
   
 }
 
 function setUser(username){
   userLabel.innerHTML = username
-  show(exitButton)
+  show(exitButton, addNewButton)
   hide(loginButton, regButton)
   localStorage.setItem('user', username)
 }
